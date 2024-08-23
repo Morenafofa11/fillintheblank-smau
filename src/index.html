@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lyric Guessing Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="game-container">
+    <h1>Mau's Lyric Guessing Game</h1>
+    <div id="game-setup">
+      <button id="start-game">Start Game</button>
+    </div>
+    <div id="game-play" style="display:none;">
+      <h2 id="song-title"></h2>
+      <div id="lyric-container">
+        <p id="lyric-display">Loading...</p>
+      </div>
+      <input type="text" id="user-answer" placeholder="Type your answer here">
+      <button id="submit-answer">Submit Answer</button>
+      <p id="feedback"></p>
+      <button id="next-round" style="display:none;">Next Round</button>
+      <div id="audio-container" style="display:none;">
+        <audio id="audio-player" controls></audio>
+      </div>
+    </div>
+    <div id="game-end" style="display:none;">
+      <h2>Game Over!</h2>
+      <p>Your score: <span id="final-score"></span></p>
+      <button id="restart-game">Play Again</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
